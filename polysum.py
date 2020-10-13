@@ -8,11 +8,12 @@
 import math
 
 def polysum (n, s):
-        area=(0.25*n*s**2)/(math.tan(3.14/n))
+        area=(0.25*n*s**2)/(math.tan(math.pi/n))
         perimeter = n*s
         total= area + perimeter**2
         sum = round(total,4)
         return sum
 
 print(polysum(8,10))
+
 
